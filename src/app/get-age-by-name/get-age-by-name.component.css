@@ -1,0 +1,40 @@
+.inputField{
+  width: 400px;
+  margin-left: 77%;
+}
+
+.button {
+  margin-top: 1%;
+  margin-right: 50%;
+}
+
+.ageCard{
+  margin-left: 25%;
+  margin-top: 50px;
+  width: 50%;
+}
+
+.ageCardBody{
+  margin-top: 10%;
+}
+
+.ageTitle{
+  font-size: 40px;
+}
+
+.ageText{
+  font-size: 30px;
+}
+
+.dogImage{
+  padding: 0px;
+  border: none;
+}
+
+.pictureHeight{
+  height: 300px;
+}
+
+.backgroundColor{
+  background-color: #e6f2ff;
+}
