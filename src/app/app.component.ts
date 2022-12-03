@@ -15,7 +15,7 @@ export class AppComponent {
   picture: any;
 
   getImageLink(){
-    this.http.get('http://shibe.online/api/shibes').subscribe((response: any)=>{
+    this.http.get('https://shibe.online/api/shibes').subscribe((response: any)=>{
       this.picture = response;
     });
   }
