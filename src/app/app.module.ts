@@ -5,15 +5,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { HttpClientModule } from '@angular/common/http';
-import {GetAgeByNameComponent} from "./get-age-by-name/get-age-by-name.component";
+import {GetAgeByNameComponent} from "./getAgeByName/getAgeByName.component";
 import {FormsModule} from "@angular/forms";
+import { NavigationComponent } from './navigation/navigation.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     GetAgeByNameComponent,
-    GetAgeByNameComponent
+    GetAgeByNameComponent,
+    NavigationComponent,
   ],
   imports: [
     BrowserModule,

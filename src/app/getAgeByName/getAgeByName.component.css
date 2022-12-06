@@ -1,0 +1,50 @@
+h1{
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.inputField{
+  margin-left: 30%;
+  width: 40%;
+}
+
+.button {
+  margin-top: 20px;
+  font-size: 20px;
+  width: 40%;
+}
+
+.ageCard{
+  margin-top: 50px;
+  margin-left: 34%;
+  width: 30%;
+}
+
+.ageCardBody{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.ageTitle{
+  font-size: 40px;
+}
+
+.ageText{
+  font-size: 30px;
+}
+
+.backgroundColorForAge{
+  background-color: #e6f2ff;
+}
+
+.backgroundColorForNationality{
+  background-color: #b34c65;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 1200px) {
+  .ageCard{
+    width: 50%;
+    margin-left: 25%;
+  }
+}

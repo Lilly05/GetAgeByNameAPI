@@ -7,16 +7,17 @@ import {HttpClient} from "@angular/common/http";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
   title = 'guessAgeByName';
-  constructor(private http: HttpClient) {
-    this.getImageLink();
+
+  constructor() {
   }
 
-  picture: any;
+  titleOfPage: string = '';
 
-  getImageLink(){
-    this.http.get('http://shibe.online/api/shibes').subscribe((response: any)=>{
-      this.picture = response;
-    });
+  setTitleOfPage(title: string){
+    this.titleOfPage = title;
+    console.log(title);
   }
+
 }
