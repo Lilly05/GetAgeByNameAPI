@@ -10,10 +10,4 @@ export class AppComponent {
   title = 'guessAgeByName';
   constructor(private http: HttpClient) {
   }
-
-  getColorPalette(){
-    this.http.get('https://www.colourlovers.com/api/palettes/random').subscribe((response: any)=>{
-      console.log(response);
-    });
-  }
 }

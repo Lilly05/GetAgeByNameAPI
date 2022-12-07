@@ -46,12 +46,4 @@ export class GuesserComponent {
       }
     });
   }
-  headers = new HttpHeaders()
-      .set('Access-Control-Allow-Origin', '*');
-
-  getDomains(){
-    this.http.get('https://api.domainsdb.info/v1/domains/search?domain=guineapig',{ 'headers': this.headers }).subscribe((domains: any) => {
-      console.log(domains[0]);
-    });
-  }
 }

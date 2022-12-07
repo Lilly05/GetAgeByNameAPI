@@ -8,16 +8,15 @@ import { HttpClientModule } from '@angular/common/http';
 import {GuesserComponent} from "./guesser/guesser.component";
 import {FormsModule} from "@angular/forms";
 import { NavigationComponent } from './navigation/navigation.component';
-import { DomainSearchComponent } from './domain-search/domain-search.component';
+import { HarryPotterInformationComponent } from './harry-potter-information/harry-potter-information.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     GuesserComponent,
-    GuesserComponent,
     NavigationComponent,
-    DomainSearchComponent,
+    HarryPotterInformationComponent,
   ],
   imports: [
     BrowserModule,

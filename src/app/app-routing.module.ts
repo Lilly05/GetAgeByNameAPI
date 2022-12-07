@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {GuesserComponent} from "./guesser/guesser.component";
-import {DomainSearchComponent} from "./domain-search/domain-search.component";
+import {HarryPotterInformationComponent} from "./harry-potter-information/harry-potter-information.component";
 
 const routes: Routes = [
   { path: '', redirectTo: '/guesser', pathMatch: 'full' },
   { path: 'guesser', component: GuesserComponent},
-  { path: 'domain-searcher', component: DomainSearchComponent},
+  { path: 'harry-potter', component: HarryPotterInformationComponent},
 ];
 
 @NgModule({
