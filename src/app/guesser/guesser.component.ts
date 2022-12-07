@@ -1,13 +1,13 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
-import {HttpClient} from "@angular/common/http";
+import {HttpClient, HttpHeaders} from "@angular/common/http";
 
 @Component({
-  selector: 'app-getAgeByName',
-  templateUrl: './getAgeByName.component.html',
-  styleUrls: ['./getAgeByName.component.css']
+  selector: 'app-guesser',
+  templateUrl: './guesser.component.html',
+  styleUrls: ['./guesser.component.css']
 })
 
-export class GetAgeByNameComponent {
+export class GuesserComponent {
   constructor(private http: HttpClient) {
   }
 
@@ -16,6 +16,7 @@ export class GetAgeByNameComponent {
   nationality: string[] = [];
   age: any;
   showCard: boolean = false;
+  nameNotFound: boolean = false;
 
   getAgeByName(name: string) {
     if (name != '' && name != null) {
@@ -24,8 +25,10 @@ export class GetAgeByNameComponent {
           this.name = name;
           this.age = age.age;
           this.showCard = true;
+          this.nameNotFound = false;
         } else {
           this.showCard = false;
+          this.nameNotFound = true;
         }
       });
     } else {
@@ -37,8 +40,18 @@ export class GetAgeByNameComponent {
     this.nationality = [];
     this.http.get('https://api.nationalize.io/?name=' + name).subscribe((nationality: any) => {
       for (let element = 0; element < 5; element++){
-        this.nationality.push(nationality.country[element].country_id);
+        this.http.get('https://restcountries.com/v2/alpha/' + nationality.country[element].country_id).subscribe((countryName: any) => {
+          this.nationality.push(countryName.name);
+        });
       }
+    });
+  }
+  headers = new HttpHeaders()
+      .set('Access-Control-Allow-Origin', '*');
+
+  getDomains(){
+    this.http.get('https://api.domainsdb.info/v1/domains/search?domain=guineapig',{ 'headers': this.headers }).subscribe((domains: any) => {
+      console.log(domains[0]);
     });
   }
 }

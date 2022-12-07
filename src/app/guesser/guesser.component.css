@@ -14,10 +14,11 @@ h1{
   width: 40%;
 }
 
-.ageCard{
+.cards{
   margin-top: 50px;
   margin-left: 34%;
   width: 30%;
+  border: none;
 }
 
 .ageCardBody{
@@ -38,13 +39,49 @@ h1{
 }
 
 .backgroundColorForNationality{
-  background-color: #b34c65;
+  background-color: #e6ccff;
+}
+
+ol{
+  padding-left: 30%;
+}
+
+h3{
+  margin-top: 20px;
+  color: #b34c65;
 }
 
 /* Responsive Design */
 @media only screen and (max-width: 1200px) {
-  .ageCard{
+  .cards{
     width: 50%;
     margin-left: 25%;
+  }
+}
+
+@media only screen and (max-width: 800px){
+  .inputField{
+    width: 60%;
+    margin-left: 20%;
+  }
+
+  .button{
+    width: 60%;
+  }
+
+  .cards{
+    width: 80%;
+    margin-left: 12%;
+  }
+}
+
+@media only screen and (max-width: 550px){
+  .inputField{
+    width: 75%;
+    margin-left: 12%;
+  }
+
+  .button{
+    width: 75%;
   }
 }

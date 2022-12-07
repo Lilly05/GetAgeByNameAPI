@@ -5,17 +5,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { HttpClientModule } from '@angular/common/http';
-import {GetAgeByNameComponent} from "./getAgeByName/getAgeByName.component";
+import {GuesserComponent} from "./guesser/guesser.component";
 import {FormsModule} from "@angular/forms";
 import { NavigationComponent } from './navigation/navigation.component';
+import { DomainSearchComponent } from './domain-search/domain-search.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    GetAgeByNameComponent,
-    GetAgeByNameComponent,
+    GuesserComponent,
+    GuesserComponent,
     NavigationComponent,
+    DomainSearchComponent,
   ],
   imports: [
     BrowserModule,

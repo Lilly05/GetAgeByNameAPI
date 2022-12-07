@@ -9,14 +9,11 @@ import {HttpClient} from "@angular/common/http";
 export class AppComponent {
   title = 'guessAgeByName';
   constructor(private http: HttpClient) {
-    this.getImageLink();
   }
 
-  picture: any;
-
-  getImageLink(){
-    this.http.get('https://shibe.online/api/shibes').subscribe((response: any)=>{
-      this.picture = response;
+  getColorPalette(){
+    this.http.get('https://www.colourlovers.com/api/palettes/random').subscribe((response: any)=>{
+      console.log(response);
     });
   }
 }
