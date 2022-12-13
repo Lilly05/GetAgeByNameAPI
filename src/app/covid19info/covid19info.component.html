@@ -1,0 +1,17 @@
+<div class="text-center">
+    <h1 class="fw-bold">{{countryname}}</h1>
+    <p class="lastupdated">last updated: {{lastUpdated}}</p>
+<ol class="list-group information">
+    <li class="list-group-item align-items-start">
+        <div class="">
+            <h2 class="fw-bold col-6 col-sm-4 canton">Canton</h2>
+            <h2 class="fw-bold infections">Infections per canton</h2>
+        </div>
+        <div class="ms-2 me-auto" *ngFor="let canton of cantons; let i = index">
+            <div class="fw-bold col-6 col-sm-4 canton">{{canton}}</div>
+            <div class="infection">{{infections[i]}}</div>
+            <div class="d-none d-md-block col-6 col-sm-4"></div>
+        </div>
+    </li>
+</ol>
+</div>

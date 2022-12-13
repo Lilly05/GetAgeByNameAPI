@@ -9,6 +9,7 @@ import {GuesserComponent} from "./guesser/guesser.component";
 import {FormsModule} from "@angular/forms";
 import { NavigationComponent } from './navigation/navigation.component';
 import { HarryPotterInformationComponent } from './harry-potter-information/harry-potter-information.component';
+import { Covid19infoComponent } from './covid19info/covid19info.component';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { HarryPotterInformationComponent } from './harry-potter-information/harr
     GuesserComponent,
     NavigationComponent,
     HarryPotterInformationComponent,
+    Covid19infoComponent,
   ],
   imports: [
     BrowserModule,
