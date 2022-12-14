@@ -6,24 +6,20 @@
     margin-top: -50px;
 }
 
-.information{
-    margin-left: 25%;
-}
-
 .infection{
     margin-top: -25px;
 }
 
-*{
+* {
     border: none;
 }
 
-.lastupdated{
-    color: red;
+.alertUpdate{
+    width: 25%;
+    margin-left: 37%;
 }
 
-@media only screen and (max-width: 1100px){
-    .information{
-        margin-left: 17%;
-    }
+.informationAlert{
+    width: 72%;
+    margin-left: 14%;
 }

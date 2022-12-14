@@ -1,17 +1,20 @@
 <div class="text-center">
     <h1 class="fw-bold">{{countryname}}</h1>
-    <p class="lastupdated">last updated: {{lastUpdated}}</p>
-<ol class="list-group information">
-    <li class="list-group-item align-items-start">
-        <div class="">
-            <h2 class="fw-bold col-6 col-sm-4 canton">Canton</h2>
-            <h2 class="fw-bold infections">Infections per canton</h2>
+    <div class="alert alert-danger alertUpdate" role="alert">
+        last updated: {{lastUpdatedDate}}
+    </div>
+    <div class="alert alert-info informationAlert" role="alert">
+        <h4 class="alert-heading">Information</h4>
+        <p>On top you can see each canton and below each canton is the number of infections of COVID19</p>
+    </div>
+    <div class="container text-center">
+        <div class="row g-2">
+            <div class="col-6 border" *ngFor="let canton of cantons; let i = index">
+                <div class="p-3 bg-info bg-opacity-25">{{canton}}</div>
+                <div class="p-3 bg-light">{{infections[i]}}</div>
+            </div>
         </div>
-        <div class="ms-2 me-auto" *ngFor="let canton of cantons; let i = index">
-            <div class="fw-bold col-6 col-sm-4 canton">{{canton}}</div>
-            <div class="infection">{{infections[i]}}</div>
-            <div class="d-none d-md-block col-6 col-sm-4"></div>
-        </div>
-    </li>
-</ol>
+    </div>
 </div>
+
+

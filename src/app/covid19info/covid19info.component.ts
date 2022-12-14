@@ -12,7 +12,8 @@ export class Covid19infoComponent {
   cantons: string[] = [];
   infections: string[] = [];
   abbrevation: string = '';
-  lastUpdated: string = '';
+  lastUpdated: string[] = [];
+  lastUpdatedDate:string = '';
   constructor(private http: HttpClient) {
     this.getSwitzerlandInfo();
   }
@@ -21,7 +22,8 @@ export class Covid19infoComponent {
     this.http.get('https://api.apify.com/v2/key-value-stores/lDegAca820XgvjE0C/records/LATEST?disableRedirect=true').subscribe((response: any) => {
       console.log(response);
       this.countryname = response.country;
-      this.lastUpdated = response.lastUpdatedAtSource;
+      this.lastUpdated = response.lastUpdatedAtSource.split("T");
+      this.lastUpdatedDate = this.lastUpdated[0];
       for (let element = 0; element < 27; element++){
         this.cantons.push(response.infectedByRegion[element].region);
         this.infections.push(response.infectedByRegion[element].infected);
