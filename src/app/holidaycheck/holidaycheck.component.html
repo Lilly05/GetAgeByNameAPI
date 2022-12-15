@@ -1,0 +1,15 @@
+<div class="text-center">
+    <h1>Check if a date is a holiday or not</h1>
+    <form>
+        <input class="row calendar" type="date" id="date" name="date" (change)="selectDate($event)">
+        <button type="submit" class="row btn btn-outline-info button" (click)="checkDate()">Check</button>
+    </form>
+    <div *ngIf="isHoliday" class="holiday">
+        <h2>It's a holiday!!</h2>
+        <h3 class="alert alert-info holidayInformation">On {{weekday}}, the {{holidayDate}}, is {{holidayName}}</h3>
+        <h2>In your free time you could {{activity}}</h2>
+    </div>
+    <div *ngIf="!isHoliday" class="holiday">
+        <h2> not a holiday :(</h2>
+    </div>
+</div>
