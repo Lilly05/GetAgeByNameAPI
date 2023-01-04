@@ -1,0 +1,25 @@
+.allProjects{
+    margin-top: 30px;
+}
+
+button{
+    height: 50px;
+}
+
+a{
+    color: black !important;
+}
+
+@media screen and (max-width: 400px){
+    a{
+        font-size: 12px;
+    }
+
+    h4{
+        font-size: 15px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+}

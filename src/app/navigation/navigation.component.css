@@ -1,4 +1,7 @@
-.element{
-    color: black !important;
-    opacity: 100% !important;
+@media screen and (max-width: 400px){
+    a{
+        font-size: 12px;
+    }
 }
+
+

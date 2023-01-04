@@ -23,3 +23,10 @@
     width: 72%;
     margin-left: 14%;
 }
+
+@media screen and (max-width: 600px){
+    .alertUpdate{
+        width: 45%;
+        margin-left: 27%;
+    }
+}

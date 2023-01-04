@@ -10,6 +10,7 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { NavigationComponent } from './navigation/navigation.component';
 import { HolidaycheckComponent } from './holidaycheck/holidaycheck.component';
 import { Covid19infoComponent } from './covid19info/covid19info.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { Covid19infoComponent } from './covid19info/covid19info.component';
     NavigationComponent,
     HolidaycheckComponent,
     Covid19infoComponent,
+    HomeComponent,
   ],
     imports: [
         BrowserModule,
