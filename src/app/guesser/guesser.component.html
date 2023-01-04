@@ -17,18 +17,18 @@
     <div class="row">
       <div class="backgroundColorForAge col-sm-6">
         <div>
-        <div class="card-body ageCardBody">
-          <h5 class="card-title ageTitle">{{age}}</h5>
+        <div class="card-body responseCardBody">
+          <h5 class="card-title responseTitle">{{age}}</h5>
           <p class="card-text ageText">{{name}} you are {{age}} years old!</p>
         </div>
         </div>
       </div>
       <div class="backgroundColorForNationality col-sm-6">
         <div>
-          <div class="card-body ageCardBody">
-            <h5 class="card-title ageTitle">Top Nationalities</h5>
-            <ol>
-              <li *ngFor="let n of nationality">{{n}}</li>
+          <div class="card-body responseCardBody">
+            <h5 class="card-title responseTitle">Top Nationalities</h5>
+            <ol class="nationalities">
+              <li class="nationality" *ngFor="let n of nationality">{{n}}</li>
             </ol>
           </div>
         </div>

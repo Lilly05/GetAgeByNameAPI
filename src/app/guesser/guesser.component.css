@@ -21,12 +21,12 @@ h1{
   border: none;
 }
 
-.ageCardBody{
+.responseCardBody{
   margin-top: 15px;
   margin-bottom: 15px;
 }
 
-.ageTitle{
+.responseTitle{
   font-size: 40px;
 }
 
@@ -73,6 +73,10 @@ h3{
     width: 80%;
     margin-left: 12%;
   }
+
+  .nationality{
+    width: 50%;
+  }
 }
 
 @media only screen and (max-width: 550px){
@@ -83,5 +87,10 @@ h3{
 
   .button{
     width: 75%;
+  }
+
+  .nationalities{
+    margin-left: 10%;
+    width: 100%;
   }
 }
