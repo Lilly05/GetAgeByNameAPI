@@ -1,0 +1,20 @@
+<div class="text-center">
+    <h1>Enter a domain and get back the Favicon</h1>
+    <h5>Examples how to enter a domain: google.com, github.com, youtube.com, l1lly.li</h5>
+    <form>
+        <div class="row">
+            <div class="col">
+                <div class="form-floating inputField">
+                    <input class="form-control" type="text" name="domain" id="domain" [(ngModel)]="domain">
+                    <label for="domain">Domain</label>
+                </div>
+            </div>
+            <div>
+                <button class="btn btn-outline-info button" (click)="getFavicon(domain)">Get the favicon</button>
+            </div>
+            <div *ngIf="showFavicon">
+                <img src="{{favicon}}" alt="favicon">
+            </div>
+        </div>
+    </form>
+</div>

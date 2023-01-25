@@ -11,6 +11,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { HolidaycheckComponent } from './holidaycheck/holidaycheck.component';
 import { Covid19infoComponent } from './covid19info/covid19info.component';
 import { HomeComponent } from './home/home.component';
+import { FaviconerComponent } from './faviconer/faviconer.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { HomeComponent } from './home/home.component';
     HolidaycheckComponent,
     Covid19infoComponent,
     HomeComponent,
+    FaviconerComponent,
   ],
     imports: [
         BrowserModule,

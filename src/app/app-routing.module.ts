@@ -4,6 +4,7 @@ import {GuesserComponent} from "./guesser/guesser.component";
 import {HolidaycheckComponent} from "./holidaycheck/holidaycheck.component";
 import {Covid19infoComponent} from "./covid19info/covid19info.component";
 import {HomeComponent} from "./home/home.component";
+import {FaviconerComponent} from "./faviconer/faviconer.component";
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -11,6 +12,7 @@ const routes: Routes = [
   { path: 'guesser', component: GuesserComponent},
   { path: 'holiday-check', component: HolidaycheckComponent},
   { path: 'covid19-info', component: Covid19infoComponent},
+  { path: 'faviconer', component: FaviconerComponent}
 ];
 
 @NgModule({
